@@ -1,12 +1,82 @@
 {
-  "name": "btn",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@vue-interface/btn",
+  "version": "3.0.0-beta.23",
+  "description": "A Vue button component.",
+  "files": [
+    "dist",
+    "tailwindcss"
+  ],
+  "type": "module",
+  "main": "./dist/btn.umd.cjs",
+  "module": "./dist/btn.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/btn.js",
+      "require": "./dist/btn.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./css": "./index.css",
+    "./tailwindcss": "./tailwindcss/index.cjs",
+    "./tailwindcss/colorize": "./tailwindcss/colorize.cjs",
+    "./tailwindcss/legacy": "./tailwindcss/legacy.cjs",
+    "./tailwindcss/safelist": "./tailwindcss/safelist.cjs",
+    "./tailwindcss/sizes": "./tailwindcss/sizes.cjs",
+    "./tailwindcss/styles/btn": "./tailwindcss/styles/btn.cjs",
+    "./tailwindcss/styles/btn-outline": "./tailwindcss/styles/btn-outline.cjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "browserslist": "last 2 versions, > 0.5%, ie >= 11",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-interface/btn.git"
+  },
+  "keywords": [
+    "Button",
+    "Control",
+    "Vue",
+    "Tailwind",
+    "Bootstrap"
+  ],
+  "author": "Justin Kimbrell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vue-interface/btn/issues"
+  },
+  "homepage": "https://github.com/vue-interface/btn",
+  "dependencies": {
+    "@vue-interface/variant": "2.0.0-beta.2",
+    "color": "^4.2.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.7.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^10.0.5",
+    "@tailwindcss/vite": "^4.1.7",
+    "@types/color": "^3.0.3",
+    "@vitejs/plugin-vue": "^4.3.2",
+    "@vue-interface/eslint-config": "^1.0.0-beta.0",
+    "autoprefixer": "^10.4.15",
+    "change-case": "^4.1.2",
+    "commitlint": "^17.7.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.47.0",
+    "husky": "^8.0.3",
+    "pascalcase": "^2.0.0",
+    "postcss": "^8.4.6",
+    "semantic-release": "^21.0.7",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.0",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.8"
+  }
 }
