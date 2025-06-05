@@ -2,11 +2,8 @@
   "name": "vue-interface-new",
   "private": true,
   "scripts": {
-    "dev": "node .bin/repo.js dev",
-    "status": "node .bin/repo.js status",
-    "bump": "node .bin/repo.js bump",
-    "release": "node .bin/repo.js bump",
     "build": "pnpm turbo run build",
+    "dev": "turbo run dev",
     "lint": "eslint packages/**/*.{js,ts,vue}",
     "lint:fix": "npm run lint -- --fix"
   },
