@@ -1,6 +1,6 @@
 {
-  "name": "@vue-interface/btn",
-  "version": "3.0.0-beta.23",
+  "name": "@vue-interface-new/btn",
+  "version": "1.0.0",
   "description": "A Vue button component.",
   "files": [
     "dist",
@@ -17,13 +17,7 @@
       "types": "./dist/index.d.ts"
     },
     "./css": "./index.css",
-    "./tailwindcss": "./tailwindcss/index.cjs",
-    "./tailwindcss/colorize": "./tailwindcss/colorize.cjs",
-    "./tailwindcss/legacy": "./tailwindcss/legacy.cjs",
-    "./tailwindcss/safelist": "./tailwindcss/safelist.cjs",
-    "./tailwindcss/sizes": "./tailwindcss/sizes.cjs",
-    "./tailwindcss/styles/btn": "./tailwindcss/styles/btn.cjs",
-    "./tailwindcss/styles/btn-outline": "./tailwindcss/styles/btn-outline.cjs"
+    "./tailwindcss": "./btn.css"
   },
   "browserslist": "last 2 versions, > 0.5%, ie >= 11",
   "scripts": {
@@ -33,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vue-interface/btn.git"
+    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/main/packages/btn"
   },
   "keywords": [
     "Button",
@@ -42,12 +36,6 @@
     "Tailwind",
     "Bootstrap"
   ],
-  "author": "Justin Kimbrell",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vue-interface/btn/issues"
-  },
-  "homepage": "https://github.com/vue-interface/btn",
   "dependencies": {
     "@vue-interface/variant": "2.0.0-beta.2",
     "color": "^4.2.0"
@@ -80,3 +68,4 @@
     "vue-tsc": "^1.8.8"
   }
 }
+

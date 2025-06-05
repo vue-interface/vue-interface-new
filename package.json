@@ -2,11 +2,13 @@
   "name": "vue-interface-new",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "dev": "node .bin/repo.js dev",
+    "status": "node .bin/repo.js status",
+    "bump": "node .bin/repo.js bump",
+    "release": "node .bin/repo.js bump",
+    "build": "pnpm turbo run build",
+    "lint": "eslint packages/**/*.{js,ts,vue}",
+    "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
