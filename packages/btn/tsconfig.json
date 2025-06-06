@@ -16,15 +16,13 @@
     "noFallthroughCasesInSwitch": true,
     
     // JSX Configuration for Vue - try this combination
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "jsxImportSource": "vue"
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    ".storybook/**/*.ts",
-    ".storybook/**/*.tsx"
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.vue",
   ],
   "exclude": ["node_modules"]
 }
