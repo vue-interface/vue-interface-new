@@ -1,6 +1,6 @@
-
-
-import { join, dirname } from "path"
+import { join, dirname } from "path";
+import tailwindcss from '@tailwindcss/postcss';
+import autoprefixer from 'autoprefixer';
 
 /**
 * This function is used to resolve the absolute path of a package.
@@ -16,11 +16,22 @@ const config = {
     "../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
   "addons": [
-    getAbsolutePath('@storybook/addon-docs')
+    getAbsolutePath('@storybook/addon-docs'),
+    getAbsolutePath('@storybook/addon-themes')
   ],
   "framework": {
     "name": getAbsolutePath('@storybook/html-vite'),
     "options": {}
+  },
+  viteFinal: async (config) => {
+    config.css = config.css || {};
+    config.css.postcss = {
+      plugins: [
+        tailwindcss(), 
+        autoprefixer()
+      ],
+    };
+    return config;
   }
 };
 export default config;

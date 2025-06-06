@@ -1,7 +1,3 @@
-import './btn.css';
-import '../../css/colors.css';
-import '../../css/sizes.css';
-
 export default {
     title: 'Example/Btn',
     tags: ['autodocs'], 
