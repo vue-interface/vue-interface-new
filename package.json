@@ -6,8 +6,9 @@
     "dev": "turbo run dev",
     "lint": "eslint packages/**/*.{js,ts,vue}",
     "lint:fix": "npm run lint -- --fix",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "storybook dev -p 6006 --no-manager-cache",
+    "build-storybook": "storybook build",
+    "storybook:clean": "rm -rf node_modules/.cache/storybook && storybook dev -p 6006"
   },
   "devDependencies": {
     "@storybook/addon-docs": "9.0.5",
