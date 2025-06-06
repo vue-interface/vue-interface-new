@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
-
+import './btn.css';
 // type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
  
 const meta = {
