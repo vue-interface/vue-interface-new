@@ -15,9 +15,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     
-    // JSX Configuration for Vue - try this combination
-    "jsx": "react-jsx",
-    "jsxImportSource": "vue"
+    // JSX Configuration for Vue
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
   },
   "include": [
     "src/**/*.ts",
@@ -25,6 +25,5 @@
     "src/**/*.vue",
     ".storybook/**/*.ts",
     ".storybook/**/*.tsx"
-  ],
-  "exclude": ["node_modules"]
+  ]
 }

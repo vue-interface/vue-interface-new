@@ -38,6 +38,7 @@ export default ({ command }) => defineConfig({
     },
     plugins: [
         vue(),
+        vueJsx(),
         tailwindcss()
-    ],
+    ]
 });
