@@ -3,8 +3,8 @@ import '../../css/colors.css';
 import '../../css/sizes.css';
 
 export default {
-    title: 'Example/Button Variants',
-    tags: ['autodocs'],
+    title: 'Example/Btn',
+    tags: ['autodocs'], 
 };
 
 // Utility to wrap button groups in a container
