@@ -22,7 +22,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "**/*.vue",
+    "**/*.vue", "vite.config.js",
   ],
   "exclude": ["node_modules"]
 }
