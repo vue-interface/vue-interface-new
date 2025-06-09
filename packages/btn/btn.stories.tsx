@@ -110,6 +110,23 @@ export const BlockButtons = {
 export const Sizes = {
     name: 'Sizes',
     render: () => (
+        <div class="flex gap-2">
+            <button class="btn btn-primary btn-xs self-center">xs</button>
+            <button class="btn btn-primary btn-sm self-center">sm</button>
+            <button class="btn btn-primary btn-base self-center">base</button>
+            <button class="btn btn-primary btn-lg self-center">lg</button>
+            <button class="btn btn-primary btn-xl self-center">xl</button>
+            <button class="btn btn-primary btn-2xl self-center">2xl</button>
+            <button class="btn btn-primary btn-3xl self-center">3xl</button>
+            <button class="btn btn-primary btn-4xl self-center">4xl</button>
+        </div>
+    )
+};
+
+// // Story: Block Sizes
+export const BlockSizes = {
+    name: 'Block Sizes',
+    render: () => (
         <div class="flex flex-col gap-2">
             <button class="btn btn-primary btn-xs">xs</button>
             <button class="btn btn-primary btn-sm">sm</button>
