@@ -48,7 +48,7 @@ export const CustomColors = {
     ),
 };
 
-// // Story: Color Shades
+// Story: Color Shades
 export const ColorShades = {
     name: 'Color Shades',
     render: () => (
@@ -60,7 +60,7 @@ export const ColorShades = {
     ),
 };
 
-// // Story: Outline Buttons
+// Story: Outline Buttons
 export const OutlineButtons = {
     name: 'Outline Buttons',
     render: () =>(
@@ -77,7 +77,7 @@ export const OutlineButtons = {
     )
 };
 
-// // Story: Outline Color Shades
+// Story: Outline Color Shades
 export const OutlineColorShades = {
     name: 'Outline Color Shades',
     render: () =>(        
@@ -89,7 +89,7 @@ export const OutlineColorShades = {
     )
 };
 
-// // Story: Block Buttons
+// Story: Block Buttons
 export const BlockButtons = {
     name: 'Block Buttons',
     render: () => (
@@ -106,7 +106,7 @@ export const BlockButtons = {
     ),
 };
 
-// // Story: Sizes
+// Story: Sizes
 export const Sizes = {
     name: 'Sizes',
     render: () => (
@@ -123,7 +123,7 @@ export const Sizes = {
     )
 };
 
-// // Story: Block Sizes
+// Story: Block Sizes
 export const BlockSizes = {
     name: 'Block Sizes',
     render: () => (
@@ -158,7 +158,7 @@ export const Active = {
     )
 };
 
-// // Story: Disabled State
+// Story: Disabled State
 export const Disabled = {
     name: 'Disabled',
     render: () => (
