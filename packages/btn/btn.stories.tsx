@@ -52,7 +52,7 @@ export const CustomColors = {
 export const ColorShades = {
     name: 'Color Shades',
     render: () => (
-        <div class="flex gap-2">
+        <div class="flex flex-col gap-1">
             {[50,100,200,300,400,500,600,700,800,900].map(value => (
                 <button class={`btn btn-red-${value}`}>Red {value}</button>
             ))}
@@ -81,7 +81,7 @@ export const OutlineButtons = {
 export const OutlineColorShades = {
     name: 'Outline Color Shades',
     render: () =>(        
-        <div class="flex gap-2">
+        <div class="flex flex-col gap-2">
             {[50,100,200,300,400,500,600,700,800,900].map(value => (
                 <button class={`btn btn-outline-red-${value}`}>Red {value}</button>
             ))}
