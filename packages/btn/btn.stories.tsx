@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import type { Meta, StoryObj } from '@storybook/vue3';
 import './btn.css';
 // type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
@@ -13,14 +14,6 @@ type Story = StoryObj<typeof meta>
 
 export const ColorVariants = {
     name: 'Color Variants',
-    parameters: {
-        backgrounds: {
-            options: {
-                light: { name: 'Light', value: '#fff' },
-                dark: { name: 'Dark', value: '#333' },
-            },
-        },
-    },
     render: () => (
         <div class="flex gap-2">
             <button class="btn btn-primary">Primary</button>
@@ -76,6 +69,55 @@ export const OutlineButtons = {
         </div>
     )
 };
+
+
+/* import { computed } from 'vue';
+// OutlineButtons.stories.tsx
+export const OutlineButtons = {
+    name: 'Outline Button',
+    args: {
+        option: 'primary',
+    },
+    argTypes: {
+        option: {
+            control: { type: 'select' },
+            options: [
+                'primary',
+                'secondary',
+                'success',
+                'danger',
+                'warning',
+                'info',
+                'light',
+                'dark',
+            ],
+        },
+    },
+    render: (args: { option: string }) => ({
+        setup() {
+            // Computed label that updates when args.variant changes
+            const label = computed(() =>
+                args.option.charAt(0).toUpperCase() + args.option.slice(1)
+            );
+
+            return () => (
+                <div class="flex gap-2">
+                    <button class={`btn btn-outline-${args.option}`}>
+                        {label.value}
+                    </button>
+                </div>
+            );
+        },
+    }),
+}; */
+
+
+
+
+
+
+
+
 
 // Story: Outline Color Shades
 export const OutlineColorShades = {
