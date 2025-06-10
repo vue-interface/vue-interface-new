@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-/*@import "./colors.css";*/
-/*@import "./sizes.css";*/
-
 @theme {
 	--dropdown-menu-position: absolute;
 	--dropdown-menu-top: 100%;
