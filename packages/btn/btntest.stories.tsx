@@ -1,32 +1,70 @@
-/* eslint-disable indent */
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta } from '@storybook/vue3';
+import { computed, defineComponent } from 'vue';
 import './btn.css';
-// type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
+
  
 const meta = {
-    title: 'Example/Btn',
+    title: 'Example/BtnControlsTest',
     tags: ['autodocs']
 } satisfies Meta;
 
 export default meta;
 
-type Story = StoryObj<typeof meta>
+/* type Story = StoryObj<typeof meta> */
 
-export const ColorVariants = {
+function createVariantStory({
+    name,
+    classPrefix,
+}: {
+  name: string;
+  classPrefix: string;
+}) {
+    return {
+        name,
+        args: {
+            variants: 'primary',
+        },
+        argTypes: {
+            variants: {
+                control: { type: 'radio' },
+                options: [
+                    'primary',
+                    'secondary',
+                    'success',
+                    'danger',
+                    'warning',
+                    'info',
+                    'light',
+                    'dark',
+                ],
+            },
+        },
+        parameters: {
+            backgrounds: { default: 'light' }, // you can centralize background defaults here
+        },
+        render: (args: { variants: string }) =>
+            defineComponent({
+                setup() {
+                    const label = computed(
+                        () => args.variants.charAt(0).toUpperCase() + args.variants.slice(1)
+                    );
+
+                    return () => (
+                        <div class="flex gap-2">
+                            <button class={`btn ${classPrefix}-${args.variants}`}>
+                                {label.value}
+                            </button>
+                        </div>
+                    );
+                },
+            }),
+    };
+};
+
+export const ColorVariants = createVariantStory({
     name: 'Color Variants',
-    render: () => (
-        <div class="flex gap-2">
-            <button class="btn btn-primary">Primary</button>
-            <button class="btn btn-secondary">Secondary</button>
-            <button class="btn btn-success">Success</button>
-            <button class="btn btn-danger">Danger</button>
-            <button class="btn btn-warning">Warning</button>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-light">Light</button>
-            <button class="btn btn-dark">Dark</button>
-        </div>
-    ),
-} satisfies Story;
+    classPrefix: 'btn',
+});
 
 // Story: Custom Colors
 export const CustomColors = {
@@ -54,21 +92,11 @@ export const ColorShades = {
 };
 
 // Story: Outline Buttons
-export const OutlineButtons = {
+export const OutlineButtons = createVariantStory({
     name: 'Outline Buttons',
-    render: () =>(
-        <div class="flex gap-2">
-            <button class="btn btn-outline-primary">Primary</button>
-            <button class="btn btn-outline-secondary">Secondary</button>
-            <button class="btn btn-outline-success">Success</button>
-            <button class="btn btn-outline-danger">Danger</button>
-            <button class="btn btn-outline-warning">Warning</button>
-            <button class="btn btn-outline-info">Info</button>
-            <button class="btn btn-outline-light">Light</button>
-            <button class="btn btn-outline-dark">Dark</button>
-        </div>
-    )
-};
+    classPrefix: 'btn-outline',
+});
+
 
 // Story: Outline Color Shades
 export const OutlineColorShades = {
@@ -83,21 +111,10 @@ export const OutlineColorShades = {
 };
 
 // Story: Block Buttons
-export const BlockButtons = {
+export const BlockButtons = createVariantStory({
     name: 'Block Buttons',
-    render: () => (
-        <div class="flex flex-col gap-2">
-            <button class="btn btn-primary btn-block">Primary</button>
-            <button class="btn btn-secondary btn-block">Secondary</button>
-            <button class="btn btn-success btn-block">Success</button>
-            <button class="btn btn-danger btn-block">Danger</button>
-            <button class="btn btn-warning btn-block">Warning</button>
-            <button class="btn btn-info btn-block">Info</button>
-            <button class="btn btn-light btn-block">Light</button>
-            <button class="btn btn-dark btn-block">Dark</button>
-        </div>
-    ),
-};
+    classPrefix: 'btn btn-block btn', // We'll handle this carefully below
+});
 
 // Story: Sizes
 export const Sizes = {
