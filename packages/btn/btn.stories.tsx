@@ -4,7 +4,7 @@ import './btn.css';
 // type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
  
 const meta = {
-    title: 'Example/Btn',
+    title: 'Example/Button',
     tags: ['autodocs']
 } satisfies Meta;
 

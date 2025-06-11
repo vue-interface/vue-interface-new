@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 import './btn-group.css';
-// type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
+import './btn.css';
  
 const meta = {
-    title: 'Example/Btn-Group',
+    title: 'Example/Button Group',
     tags: ['autodocs']
 } satisfies Meta;
 

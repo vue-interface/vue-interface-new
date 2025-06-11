@@ -1,9 +1,13 @@
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
 import type { StorybookConfig } from '@storybook/vue3-vite';
+
+const require = createRequire(import.meta.url);
 
 const config: StorybookConfig = {
   // Required
   framework: {
-    name: '@storybook/vue3-vite',
+    name: getAbsolutePath("@storybook/vue3-vite"),
     options: {
       docgen: {
         plugin: 'vue-component-meta',
@@ -13,7 +17,7 @@ const config: StorybookConfig = {
   },
   stories: ['../packages/**/*.mdx', '../packages/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   // Optional
-  addons: ['@storybook/addon-docs'],
+  addons: [getAbsolutePath("@storybook/addon-docs")],
   docs: {
     // autodocs: 'tag',
   },
@@ -36,7 +40,7 @@ const config: StorybookConfig = {
   },
   // staticDirs: ['../public'],
 };
- 
+
 export default config;
 
 // import tailwindcss from '@tailwindcss/postcss';
@@ -76,3 +80,7 @@ export default config;
 //   }
 // };
 // export default config;
+
+function getAbsolutePath(value: string): any {
+  return dirname(require.resolve(join(value, "package.json")));
+}

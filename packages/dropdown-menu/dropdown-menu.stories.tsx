@@ -3,7 +3,7 @@ import './dropdown-menu.css';
 // type PagePropsAndCustomArgs = ComponentPropsAndSlots<typeof Page> & { footer?: string };
  
 const meta = {
-    title: 'Example/Dropdown-menu',
+    title: 'Example/Dropdown Menu',
     tags: ['autodocs']
 } satisfies Meta;
 
