@@ -15,7 +15,7 @@
 	--dropdown-menu-bg-dark: var(--color-neutral-800, oklch(26.9% 0 0));
 	--dropdown-menu-bg-clip: padding-box;
 	--dropdown-menu-border: 1px solid var(--color-neutral-400, oklch(70.8% 0 0));
-	--dropdown-menu-border-dark: 1px solid var(--color-neutral-600);
+	--dropdown-menu-border-dark: 1px solid var(--color-neutral-600, oklch(43.9% 0 0));
 	--dropdown-menu-border-radius: 0.25rem;
 	--dropdown-menu-box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
     --dropdown-menu-text-decoration: none;
@@ -26,7 +26,7 @@
 	--dropdown-menu-item-padding: 0.25rem 1rem;
 	--dropdown-menu-item-font-weight: normal;
 	--dropdown-menu-item-color: var(--color-neutral-800, oklch(26.9% 0 0));
-	--dropdown-menu-item-color-dark: var(--color-neutral-200);
+	--dropdown-menu-item-color-dark: var(--color-neutral-200, oklch(92.2% 0 0));
 	--dropdown-menu-item-text-align: inherit;
 	--dropdown-menu-item-bg: transparent;
 	--dropdown-menu-item-border: 0;
@@ -38,7 +38,7 @@
 	--dropdown-menu-item-active-color-dark: var(--dropdown-menu-item-active-color);
 	--dropdown-menu-item-active-bg: var(--color-blue-500, oklch(62.3% 0.214 259.815));
 	--dropdown-menu-item-active-bg-dark: var(--dropdown-menu-item-active-bg);
-	--dropdown-menu-item-disabled-color: var(--color-neutral-500);
+	--dropdown-menu-item-disabled-color: var(--color-neutral-500, oklch(55.6% 0 0));
 	--dropdown-menu-item-disabled-pointer-events: none;
 	--dropdown-menu-item-disabled-bg: transparent;
 
@@ -46,13 +46,14 @@
 	--dropdown-menu-header-padding: 0.5rem;
 	--dropdown-menu-header-font-size: 0.875rem;
 	--dropdown-menu-header-font-weight: bold;
-	--dropdown-menu-header-color: var(--color-neutral-500);
-	--dropdown-menu-header-color-dark: var(--color-neutral-400);
+	--dropdown-menu-header-color: var(--color-neutral-500, oklch(55.6% 0 0));
+	--dropdown-menu-header-color-dark: var(--color-neutral-400, oklch(70.8% 0 0));
 
 	--dropdown-menu-divider-height: 0;
 	--dropdown-menu-divider-margin: 0.25rem 0;
 	--dropdown-menu-divider-overflow: hidden;
-	--dropdown-menu-divider-border-top: 1px solid var(--color-neutral-200);
+	--dropdown-menu-divider-border-top: 1px solid var(--color-neutral-200, oklch(92.2% 0 0));
+	--dropdown-menu-divider-border-dark: 1px solid var(--color-neutral-900, oklch(20.5% 0 0));
 
 	--dropdown-menu-text-padding: 0.25rem 1rem;
 	--dropdown-menu-text-color: var(--color-neutral-800, oklch(26.9% 0 0));
@@ -174,7 +175,7 @@
 		font-size: var(--dropdown-menu-header-font-size);
 		font-weight: var(--dropdown-menu-header-font-weight);
 		color: var(--dropdown-menu-header-color);
-		white-space: var(--dropdown-menu-whitespace);
+		white-space: var(--dropdown-menu-white-space);
 
 		@media (prefers-color-scheme: dark) {
 			color: var(--dropdown-menu-header-color-dark);
