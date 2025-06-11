@@ -14,8 +14,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    
-    // JSX Configuration for Vue - try this combination
     "jsx": "preserve",
     "jsxImportSource": "vue"
   },

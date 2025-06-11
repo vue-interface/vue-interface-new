@@ -22,10 +22,8 @@ export const DropdownMenu = {
         },
     },
     render: () => (
-        <div id="app" class="relative dark:bg-neutral-900 dark:text-white">
-            <h3 class="text-2xl mb-3">Basic Usage</h3>
-
-            <div class="dropdown-menu show">
+        <div class="relative">
+            <div class="dropdown-menu show relative">
                 <h3 class="dropdown-header">Vue Router</h3>
                 <h3 class="dropdown-header">Links</h3>
                 <a href="#" class="dropdown-item active">Item #2</a>
