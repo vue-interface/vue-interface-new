@@ -1,6 +1,6 @@
 {
-  "name": "@vue-interface/btn-dropdown",
-  "version": "2.0.0-beta.12",
+  "name": "@vue-interface-new/btn-dropdown",
+  "version": "1.0.0",
   "description": "A Vue button dropdown component.",
   "files": [
     "dist"
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vue-interface/btn-dropdown.git"
+    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/main/packages/btn-dropdown"
   },
   "keywords": [
     "Button",
@@ -39,29 +39,28 @@
   "author": "Justin Kimbrell",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vue-interface/btn-dropdown/issues"
+    "url": "https://github.com/vue-interface/vue-interface-new/issues"
   },
-  "homepage": "https://github.com/vue-interface/btn-dropdown",
+  "homepage": "https://github.com/vue-interface/vue-interface-new/tree/jsx/packages/btn-dropdown",
   "dependencies": {
     "@popperjs/core": "^2.11.2",
-    "@vue-interface/btn": "^3.0.0-beta.1",
-    "@vue-interface/btn-group": "^2.0.0-beta.4",
-    "@vue-interface/dropdown-menu": "^2.0.0-beta.8"
+    "@vue-interface-new/btn": "workspace:*",
+    "@vue-interface-new/dropdown-menu": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.0",
+    "@vitejs/plugin-vue": "^5.2.4",
     "@vue-interface/eslint-config": "^1.0.0-beta.0",
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.15",
     "change-case": "^4.1.2",
-    "eslint": "^8.25.0",
+    "eslint": "^8.47.0",
     "pascalcase": "^2.0.0",
     "postcss": "^8.4.6",
-    "tailwindcss": "^3.1.0",
-    "typescript": "^4.9.4",
-    "vite": "^4.2.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.0",
     "vite-plugin-dts": "^1.7.1",
     "vue": "^3.3.4"
   }
