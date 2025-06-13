@@ -45,7 +45,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "@vue-interface-new/btn": "workspace:*",
-    "@vue-interface-new/dropdown-menu": "workspace:*"
+    "@vue-interface-new/dropdown-menu": "workspace:*",
+    "@vue-interface/sizeable": "^2.0.0-beta.3",
+    "@vue-interface/variant": "^2.0.0-beta.1"
   },
   "peerDependencies": {
     "vue": "^3.3.4"

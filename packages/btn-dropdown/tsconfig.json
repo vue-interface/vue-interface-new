@@ -14,12 +14,12 @@
         "allowSyntheticDefaultImports": true,
         "skipLibCheck": true,
         "noImplicitThis": false,
-        "types": ["vite/client", "vue", "vue/ref-macros"]
+        "types": ["vite/client", "vue"]
     },
     "include": [
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.vue",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
     ],
   "exclude": ["node_modules"]
 }
