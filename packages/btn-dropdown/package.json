@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/main/packages/btn-dropdown"
+    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/jsx/packages/btn-dropdown"
   },
   "keywords": [
     "Button",
@@ -45,9 +45,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "@vue-interface-new/btn": "workspace:*",
-    "@vue-interface-new/dropdown-menu": "workspace:*",
-    "@vue-interface/sizeable": "^2.0.0-beta.3",
-    "@vue-interface/variant": "^2.0.0-beta.1"
+    "@vue-interface-new/dropdown-menu": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.3.4"

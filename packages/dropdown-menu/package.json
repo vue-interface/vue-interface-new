@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/main/packages/dropdown-menu"
+    "url": "git+https://github.com/vue-interface/vue-interface-new/tree/jsx/packages/dropdown-menu"
   },
   "keywords": [
     "Button",

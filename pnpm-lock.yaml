@@ -148,12 +148,6 @@ importers:
       '@vue-interface-new/dropdown-menu':
         specifier: workspace:*
         version: link:../dropdown-menu
-      '@vue-interface/sizeable':
-        specifier: ^2.0.0-beta.3
-        version: 2.0.0-beta.11(vue@3.5.16(typescript@5.8.3))
-      '@vue-interface/variant':
-        specifier: ^2.0.0-beta.1
-        version: 2.0.0-beta.2(vue@3.5.16(typescript@5.8.3))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
@@ -1409,11 +1403,6 @@ packages:
 
   '@vue-interface/eslint-config@1.0.0-beta.4':
     resolution: {integrity: sha512-PPex6MXfXfZdpFWAW55V3iE7erEWjefkivCUALisudxSLhbyWTfeeNePPe3497yXap5uj1ujS98DzqsAX4cTNQ==}
-
-  '@vue-interface/sizeable@2.0.0-beta.11':
-    resolution: {integrity: sha512-om5V5x5EbcGIZZqC7N1fj5RZElkbwujD6S43B6hx1tc7P+04fkmfByC9u2S4mGgCzpSq/1/gheVHL4EP29hU0A==}
-    peerDependencies:
-      vue: ^3.0.0
 
   '@vue-interface/variant@2.0.0-beta.2':
     resolution: {integrity: sha512-ETmAFh9qzlQpgJcVuzJXxLtMlwN8cHRzVlXfHB4oqARDgka+CjYy6Fb5jIuMkiRtYMyLk+0ZVVJs2abB51EdPw==}
@@ -5285,10 +5274,6 @@ snapshots:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
-
-  '@vue-interface/sizeable@2.0.0-beta.11(vue@3.5.16(typescript@5.8.3))':
-    dependencies:
-      vue: 3.5.16(typescript@5.8.3)
 
   '@vue-interface/variant@2.0.0-beta.2(vue@3.5.16(typescript@5.8.3))':
     dependencies:
